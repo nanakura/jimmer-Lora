@@ -3,6 +3,8 @@
 ### Ollama
 
 ```bash
+ollama run erosynthesis/Llama-3-8B-Chinese-Chat-Jimmer:latest
+# or
 ollama run erosynthesis/Llama-3-8B-Chinese-Chat-Jimmer-q8_0-v1:latest
 # or
 ollama run erosynthesis/Llama-3-8B-Chinese-Chat-Jimmer-q5_k_m-v1:latest
