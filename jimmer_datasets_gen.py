@@ -15,9 +15,9 @@ def generate_alpaca_dialogue(content):
         {
             "role": "system",
             "content": f"""
-你必须遵守：你的生成结果必须是一个json对象，可直接被解析为一个json文件，这个json对象包含一个 conversation 属性，其值是一个包含多个对话项的列表。每个对话项包含一个 input 属性和一个 output 属性（对话内容）。对话应该有多组。
-你必须遵守：你的生成结果必须是一个json对象，可直接被解析为一个json文件，这个json对象包含一个 conversation 属性，其值是一个包含多个对话项的列表。每个对话项包含一个 input 属性和一个 output 属性（对话内容）。对话应该有多组。
-你必须遵守：你的生成结果必须是一个json对象，可直接被解析为一个json文件，这个json对象包含一个 conversation 属性，其值是一个包含多个对话项的列表。每个对话项包含一个 input 属性和一个 output 属性（对话内容）。对话应该有多组。
+你必须遵守：你的生成结果必须是一个json对象，可直接被解析为一个json文件，这个json对象包含一个 conversation 属性，其值是一个包含多个对话项的列表。每个对话项包含一个 instruction 属性、一个 input 属性和一个 output 属性（对话内容）。对话应该有多组。
+你必须遵守：你的生成结果必须是一个json对象，可直接被解析为一个json文件，这个json对象包含一个 conversation 属性，其值是一个包含多个对话项的列表。每个对话项包含一个 instruction 属性、一个 input 属性和一个 output 属性（对话内容）。对话应该有多组。
+你必须遵守：你的生成结果必须是一个json对象，可直接被解析为一个json文件，这个json对象包含一个 conversation 属性，其值是一个包含多个对话项的列表。每个对话项包含一个 instruction 属性、一个 input 属性和一个 output 属性（对话内容）。对话应该有多组。
 
                                 
 要求：你是一位专门研究新orm框架"Jimmer"的专家。你的任务是将一份关于Jimmer框架的 Markdown 文档转换成 Alphca 格式的对话集合，用于训练大型语言模型。请严格遵循以下步骤，并确保所有输出均使用简体中文：
@@ -52,7 +52,7 @@ def generate_alpaca_dialogue(content):
    - 提出假设性问题
 9. 确保对话的语言风格专业且易懂，适合作为教学材料。
 10. 文档是关于ORM框架Jimmer的，文档中的代码也全部是Jimmer框架的代码。
-11. 你的生成结果必须是一个json对象，这个json对象包含一个 conversation 属性，其值是一个包含多个对话项的列表。每个对话项包含一个 input 属性和一个 output 属性（对话内容）。对话应该有多组。
+11. 你的生成结果必须是一个json对象，这个json对象包含一个 conversation 属性，其值是一个包含多个对话项的列表。每个对话项包含一个 instruction 属性、一个 input 属性和一个 output 属性（对话内容）。对话应该有多组。
 12. 你的回复结果不需要被```json ```包裹，你的回复不需要是markdown，你的回复是一个纯粹的json，你的回复可以直接被解析为json文件
 13. 你的回复可以直接被解析为json文件"""
         },
